@@ -7,6 +7,8 @@ Feature: Put todos
     Given   Update todos with id 46628 and json "validUpdate.json"
     When    Send request to update todos
     Then    Status code should be 200
+    And     Response body id should be 46628
+    And     Validate json schema "PutJsonSchema.json"
 
    #Negative test case
   Scenario: As user i cant update todos by invalid json body request

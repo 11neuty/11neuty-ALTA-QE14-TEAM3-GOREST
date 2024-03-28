@@ -2,10 +2,8 @@ package starter.todos;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
-import io.cucumber.java.eo.Se;
 import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Steps;
-import starter.induk.GorestTodosAPI;
 
 public class DeleteTodosByIdStepDef {
     @Steps

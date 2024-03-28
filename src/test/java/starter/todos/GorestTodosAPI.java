@@ -1,4 +1,4 @@
-package starter.induk;
+package starter.todos;
 
 import io.cucumber.java.eo.Se;
 import io.restassured.http.ContentType;

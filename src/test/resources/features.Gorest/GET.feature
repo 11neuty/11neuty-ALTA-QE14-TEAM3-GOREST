@@ -6,16 +6,22 @@ Feature: GET TODOS
     Given  Get all todos with valid page
     When   Send request get all todos
     Then   Status code should be 200
+    And    Response body status should be "completed"
+    And    Validate json schema "GetAllTodos.json"
 
   Scenario: As user i can get single user todos by valid id
-    Given Get user todos by id 46560
+    Given Get user todos by id 46628
     When  Send request get todos by id
     Then  Status code should be 200
-
+    And   Response body id should be 46628
+    And   Validate json schema "GetValidIdJsonSchema.json"
+    
   Scenario: As user i can get single user todos by valid user id
     Given Get user todos by user id 6806879
     When  Send request get todos by user id
     Then  Status code should be 200
+    And   Response body user id should be 6806879
+    And   Validate json schema "GetUserIdJsonSchema.json"
 
     #Negative test case
   Scenario: As user i cant get todos by invalid id

@@ -6,6 +6,8 @@ Feature: Post todos
     Given   Create todos by user id 6810624 and valid json "validTodos.json"
     When    Send request create todos
     Then    Status code should be 201
+    And     Response body user id post should be 6810624
+    And     Validate json schema "PostJsonSchema.json"
 
    #Test case negative
   Scenario: As user i cant create new todos by blank title body json
