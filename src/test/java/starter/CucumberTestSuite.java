@@ -11,4 +11,5 @@ import org.junit.runner.RunWith;
         features = "classpath:features",
         tags = "@API"
 )
-public class CucumberTestSuite {}
+public class CucumberTestSuite {
+}
