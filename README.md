@@ -30,6 +30,6 @@ To run the project and execute the automated tests, follow these steps:
 ## 👥 Team Members
 The project's team member responsible for QA and test automation is:
 - Ryan Daffa Pratama
-- Diar adrinantoko
-- Alvin Diarma
+- Diar Adrinantoko
+- Alvin Darel Diarma
 - Samuel Pieter
