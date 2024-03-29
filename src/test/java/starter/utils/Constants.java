@@ -1,4 +1,4 @@
-package starter.Utils;
+package starter.utils;
 
 public class Constants {
     public static String DIR = System.getProperty("user.dir");

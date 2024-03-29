@@ -7,7 +7,7 @@ Feature: Delete user posts
     Then API should return response 204
     Examples:
       | id     |
-      | 115851 |
+      | 115863 |
 
   @Project
   Scenario Outline:

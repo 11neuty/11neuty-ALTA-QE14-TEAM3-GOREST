@@ -8,6 +8,7 @@ import net.thucydides.core.annotations.Steps;
 public class GetTodosUserIdStepDef {
     @Steps
     GorestTodosAPI gorestTodosAPI;
+
     @Given("Get user todos by user id {int}")
     public void getUserTodosByValidUserId(int userId) {
         gorestTodosAPI.getTodosByUserId(userId);

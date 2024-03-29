@@ -14,7 +14,7 @@ public class CreateTodosStepDef {
 
     @Given("Create todos by user id {int} and valid json {string}")
     public void createTodosByUserIdAndValidJson(int userId, String json) {
-        File jsonFile = new File(Constants.REQ_BODY+json);
+        File jsonFile = new File(Constants.REQ_BODY + json);
         gorestTodosAPI.createTodos(userId, jsonFile);
     }
 

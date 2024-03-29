@@ -12,7 +12,7 @@ public class GetTodosByParameterStepDef {
 
     @Given("Get user todos by valid page {int}  per_page {int}")
     public void getUserTodosByValidPagePer_page(int page, int per_page) {
-        gorestTodosAPI.getTodosByParameter(page,per_page);
+        gorestTodosAPI.getTodosByParameter(page, per_page);
     }
 
     @When("Send request get todos by parameter")

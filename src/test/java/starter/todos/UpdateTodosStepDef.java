@@ -11,10 +11,11 @@ import java.io.File;
 public class UpdateTodosStepDef {
     @Steps
     GorestTodosAPI gorestTodosAPI;
+
     @Given("Update todos with id {int} and json {string}")
     public void updateUserWithValidIdAndJson(int id, String json) {
-        File jsonFile = new File(Constants.REQ_BODY+json);
-        gorestTodosAPI.updateTodos(id,jsonFile);
+        File jsonFile = new File(Constants.REQ_BODY + json);
+        gorestTodosAPI.updateTodos(id, jsonFile);
     }
 
     @When("Send request to update todos")

@@ -53,7 +53,7 @@ Feature: GET TODOS
     Examples:
       | id  | statusCode |
       | 465 | 404        |
-      | 20   | 404        |
+      | 20  | 404        |
 
   @Project
   Scenario Outline: As user i cant get todos by unregistered user id

@@ -3,6 +3,17 @@
 ## 🎯 About the Project
 This project is an automated testing project for the GoRest API using Cucumber, Serenity BDD, and RestAssured. GoRest is an API service used for testing CRUD (Create, Read, Update, Delete) operations on resources such as users, posts, albums, and more. The primary goal of this project is to ensure that the API endpoints work as expected, validate the responses, and verify the correctness of the data returned by the API.
 
+## Want to learn more?
+
+For more information about Serenity BDD, you can read the [**Serenity BDD Book
+**](https://serenity-bdd.github.io/theserenitybook/latest/index.html), the official online Serenity documentation
+source. Other sources include:
+
+* **[Byte-sized Serenity BDD](https://www.youtube.com/channel/UCav6-dPEUiLbnu-rgpy7_bw/featured)** - tips and tricks
+  about Serenity BDD
+* [**Serenity BDD Blog**](https://johnfergusonsmart.com/category/serenity-bdd/) - regular articles about Serenity BDD
+* [**The Serenity Dojo**](https://www.serenity-dojo.com) - Tailored BDD and Test Automation Training and Mentoring
+=======
 ## 📝 Link to Manual Test Cases
 You can access the manual test cases for this project by following this link: [Manual Test Cases](https://docs.google.com/spreadsheets/d/1rnjhRUalAiwPVYEzc_2pk2GdE6Pwprqs3wdM11G-9IM/edit?usp=sharing)
 

@@ -24,6 +24,6 @@ public class AllTodosStepDef {
 
     @And("Response body status should be {string}")
     public void responseBodyStatusShouldBe(String status) {
-        SerenityRest.and().body(GorestTodosResponses.STATUS,equalTo(status));
+        SerenityRest.and().body(GorestTodosResponses.STATUS, equalTo(status));
     }
 }
