@@ -1,9 +1,8 @@
 Feature: Delete todos
   As user i can delete todos by valid id, and cant delete todos by invalid id
-
   #Positive test case
   Scenario: As user i can delete todos by valid id
-    Given   Delete todos by id 46630
+    Given   Delete todos by id 46641
     When    Send request to delete todos
     Then    Status code should be 204
 

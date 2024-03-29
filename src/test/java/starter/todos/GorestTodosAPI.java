@@ -15,7 +15,8 @@ public class GorestTodosAPI {
 
     public static String TODOS_USERID = Constants.BASE_URL + "/users/{userId}/todos";
 
-//    public static String TODOS_UPDATE = Constants.BASE_URL + "/todos/{id}";
+    public static String TODOS_PARAM = Constants.BASE_URL + "/todos?page={page}&per_page={per_page}";
+
     @Step("Get all user todos")
     public void getAllUserTodos(){
     SerenityRest.given()
@@ -55,6 +56,13 @@ public class GorestTodosAPI {
         SerenityRest.given()
                 .headers("Authorization","Bearer f32607836cefd0d47c45ebd5574c856c7212e0836385ec032f57085b567773ab")
                 .pathParam("id", id);
+}
+@Step("Get todos by parameter")
+    public void getTodosByParameter(int page, int per_page){
+        SerenityRest.given()
+                .headers("Authorization","Bearer f32607836cefd0d47c45ebd5574c856c7212e0836385ec032f57085b567773ab")
+                .pathParam("page", page)
+                .pathParam("per_page", per_page);
 }
 
 }
