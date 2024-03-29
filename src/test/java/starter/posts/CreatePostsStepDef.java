@@ -4,7 +4,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Steps;
-import starter.Utils.Constants;
+import starter.utils.Constants;
 
 import java.io.File;
 
@@ -15,7 +15,7 @@ public class CreatePostsStepDef {
 
     @Given("Set request create body {string} as body and {int} as id")
     public void setRequestCreateBodyAsBodyAndAsId(String json, int id) {
-        File jsonFile = new File(Constants.REQ_BODY+json);
+        File jsonFile = new File(Constants.REQ_BODY + json);
         goRestPostAPI.postCreatePosts(id, jsonFile);
     }
 

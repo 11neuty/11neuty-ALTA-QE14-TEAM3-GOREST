@@ -43,9 +43,9 @@ Feature: Gorest Get User
     And Validate json schema "GetUserJsonSchema.json"
 
     Examples:
-      | id      | name              | email              |
-      | 6807171 | Franklin Richards | richards@gmail.com |
-      | 6806721 | Raid Okotnanirda  | tnanirda@gmail.com |
+      | id      | name            | email                            |
+      | 6809307 | Gajabahu Marar  | marar_gajabahu@grimes.example    |
+      | 6809308 | Dr. Laxmi Gowda | laxmi_dr_gowda@bechtelar.example |
 
   @Project
   #Negative-TC5

@@ -22,6 +22,7 @@ Feature: Get user posts
       | !@#$%      |
       |            |
 
+  @Project
   Scenario: Get users posts without parameter
     Given Set path without parameter
     When Send request get list user posts without parameter

@@ -8,6 +8,7 @@ import net.thucydides.core.annotations.Steps;
 public class DeletePostsStepDef {
     @Steps
     GoRestPostAPI goRestPostAPI;
+
     @Given("Set parameter with {int} as id")
     public void setParameterWithAsId(int id) {
         goRestPostAPI.deletePostsValidId(id);

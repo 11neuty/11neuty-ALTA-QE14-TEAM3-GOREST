@@ -8,22 +8,23 @@ import net.thucydides.core.annotations.Steps;
 import starter.utils.Constants;
 
 import java.io.File;
+
 import static org.hamcrest.Matchers.equalTo;
 
 public class ResponsesStepDef {
     @Steps
     GorestTodosAPI gorestTodosAPI;
 
-    @Then("Status code should be {int}")
-    public void statusCodeShouldBe(int statusCode){
-        SerenityRest.then()
-                .statusCode(statusCode);
-    }
-    @And("Validate json schema {string}")
-    public void validateJsonSchema(String json) {
-        File jsonFile = new File(Constants.JSON_SCHEMA+json);
-        SerenityRest.and().body(JsonSchemaValidator.matchesJsonSchema(jsonFile));
-    }
+//    @Then("Status code should be {int}")
+//    public void statusCodeShouldBe(int statusCode){
+//        SerenityRest.then()
+//                .statusCode(statusCode);
+//    }
+//    @And("Validate json schema {string}")
+//    public void validateJsonSchema(String json) {
+//        File jsonFile = new File(Constants.JSON_SCHEMA+json);
+//        SerenityRest.and().body(JsonSchemaValidator.matchesJsonSchema(jsonFile));
+//    }
 
     @And("Response body id should be {int}")
     public void responseBodyIdShouldBe(int id) {

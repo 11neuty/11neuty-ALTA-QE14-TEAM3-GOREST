@@ -8,6 +8,7 @@ import net.thucydides.core.annotations.Steps;
 public class DeleteTodosByIdStepDef {
     @Steps
     GorestTodosAPI gorestTodosAPI;
+
     @Given("Delete todos by id {int}")
     public void deleteTodosByValidId(int id) {
         gorestTodosAPI.deleteTodosById(id);
