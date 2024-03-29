@@ -50,9 +50,9 @@ public class CommentStepDef {
     @When("Send request create new comment")
     public void sendRequestCreateNewComment() {SerenityRest.when().post(CREATE_COMMENT);
     }
-    @Then("Status code should be {int}")
-    public void statusCodeShouldBe(int statusCode) {SerenityRest.then().statusCode(statusCode);
-    }
+//    @Then("Status code should be {int}")
+//    public void statusCodeShouldBe(int statusCode) {SerenityRest.then().statusCode(statusCode);
+//    }
 
 //    @And("Validate Json Schema {string}")
 //    public void validateJsonSchema(String json) {
@@ -64,7 +64,7 @@ public class CommentStepDef {
     public void deleteCommentWithValidCommentId(int id) {
         deleteUser(id);
     }
-    @When("Send request delete user")
+    @When("Send request delete comment")
     public void sendRequestDeleteUser() {SerenityRest.when().delete(DELETE_COMMENT);
     }
 
