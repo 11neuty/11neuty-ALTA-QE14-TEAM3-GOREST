@@ -53,11 +53,12 @@ public class CommentStepDef {
     @Then("Status code should be {int}")
     public void statusCodeShouldBe(int statusCode) {SerenityRest.then().statusCode(statusCode);
     }
-    @And("Validate Json Schema {string}")
-    public void validateJsonSchema(String json) {
-        File jsonFile = new File(Constants.JSON_SCHEMA+json);
-        SerenityRest.and().body(JsonSchemaValidator.matchesJsonSchema(jsonFile));
-    }
+
+//    @And("Validate Json Schema {string}")
+//    public void validateJsonSchema(String json) {
+//        File jsonFile = new File(Constants.JSON_SCHEMA+json);
+//        SerenityRest.and().body(JsonSchemaValidator.matchesJsonSchema(jsonFile));
+//    }
 
     @Given("Delete comment with valid comment id {int}")
     public void deleteCommentWithValidCommentId(int id) {
