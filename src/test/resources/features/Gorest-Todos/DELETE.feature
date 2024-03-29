@@ -4,7 +4,7 @@ Feature: Delete todos
   @Project
   #Positive test case
   Scenario: As user i can delete todos by valid id
-    Given   Delete todos by id 46676
+    Given   Delete todos by id 46698
     When    Send request to delete todos
     Then    Status code should be 204
 
