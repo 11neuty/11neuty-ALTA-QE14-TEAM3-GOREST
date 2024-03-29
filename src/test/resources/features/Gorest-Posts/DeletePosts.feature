@@ -1,4 +1,6 @@
 Feature: Delete user posts
+
+  @Project
   Scenario Outline: Delete user post with valid id
     Given Set parameter with <id> as id
     When Send request delete posts
@@ -7,6 +9,7 @@ Feature: Delete user posts
       | id     |
       | 115851 |
 
+  @Project
   Scenario Outline:
     Given Set parameter with "<id>" as id
     When Send request delete posts with invalid id

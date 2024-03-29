@@ -1,7 +1,7 @@
 Feature: Post todos
   As user i can post todos by valid user id and cant create post by invalid user id
 
-  @API
+  @Project
   Scenario Outline: As user i can post todos by valid user id
     Given Create todos by user id <userId> and valid json <json>
     When Send request create todos
@@ -13,7 +13,8 @@ Feature: Post todos
       | 6810624 | "validTodos.json" | 201        | "PostJsonSchema.json" |
       | 6810726 | "validTodos.json" | 201        | "PostJsonSchema.json" |
 
-   #Test case negative
+  @Project
+  #Test case negative
   Scenario Outline: As user i cant create new todos by blank title body json
     Given Create todos by user id <userId> and valid json <json>
     When Send request create todos

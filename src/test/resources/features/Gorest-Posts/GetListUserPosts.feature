@@ -1,4 +1,6 @@
 Feature: Get user posts
+
+  @Project
   Scenario Outline: Get list user posts with valid parameter
     Given Set parameter with id <id>
     When Send request get list user posts
@@ -8,6 +10,7 @@ Feature: Get user posts
       | id      |
       | 6806721 |
 
+  @Project
   Scenario Outline: Get list user posts with invalid parameter
     Given Set parameter with id "<invalid id>"
     When Send request get list user posts

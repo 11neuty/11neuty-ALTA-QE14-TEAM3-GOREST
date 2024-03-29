@@ -1,4 +1,6 @@
 Feature: Create new posts
+
+  @Project
   Scenario Outline:Create new posts with valid body
     Given Set request create body "<reqBody>" as body and <id> as id
     When Send request create posts
@@ -8,6 +10,7 @@ Feature: Create new posts
       | reqBody                   | id      |
       | CreatePostsValidBody.json | 6806721 |
 
+  @Project
   Scenario Outline: Create new posts with invalid  title and body
     Given Set request create body "<reqBody>" as body and <id> as id
     When Send request create posts

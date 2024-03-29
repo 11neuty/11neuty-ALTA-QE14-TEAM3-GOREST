@@ -1,4 +1,6 @@
 Feature: Update user posts
+
+  @Project
   Scenario Outline: Update user posts with valid id and body
     Given Set request body "<body>" as body and <id> as id
     When Send request update post
@@ -8,6 +10,7 @@ Feature: Update user posts
       | body                      | id     |  |
       | UpdatePostsValidBody.json | 115818 |  |
 
+  @Project
   Scenario Outline: Update user posts with invalid id
     Given Set request body "<reqbody>" as body and "<id>" as id
     When Send request update post

@@ -1,7 +1,7 @@
 Feature: Put todos
   As user i can update todos by valid id and cant update todos by invalid id
 
-  @API
+  @Project
   Scenario Outline: As user i can update todos by valid id and json body request
     Given Update todos with id <id> and json <json>
     When Send request to update todos
@@ -13,7 +13,8 @@ Feature: Put todos
       | 46628 | "validUpdate.json" | 200        | "PutJsonSchema.json" |
       | 46645 | "validUpdate.json" | 200        | "PutJsonSchema.json" |
 
-   #Negative test case
+  @Project
+  #Negative test case
   Scenario Outline: As user i cant update todos by invalid json body request
     Given Update todos with id <id> and json <json>
     When Send request to update todos
@@ -23,7 +24,7 @@ Feature: Put todos
       | 46628 | "invalidUpdate.json" | 422        |
       | 46645 | "invalidUpdate.json" | 422        |
 
-
+  @Project
   Scenario Outline: As user i cant update todos by invalid id
     Given Update todos with id <id> and json <json>
     When Send request to update todos
