@@ -10,8 +10,8 @@ Feature: Reqres Delete User
 
     Examples:
       | id      |
-      | 6812640 |
-      | 6812641 |
+      | 6812801 |
+      | 6812802 |
 
   @Project
   #Negative
